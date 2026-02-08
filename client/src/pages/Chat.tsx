@@ -143,7 +143,7 @@ const Chat = () => {
             <div id="chatCont" className="cont bg w-full h-full md:border border-zinc-900 sm:w-[60%] md:w-1/2 shadow-md sm:rounded-[1.3rem]">
 
                 <div id="header"
-                    className="header refined glass w-full h-[9%] sm:rounded-t-[1.3rem] h flex justify-between items-center px-[0.8rem] text-[1rem] ">
+                    className="header refined glass backdrop-blur-[12px] w-full h-[9%] sm:rounded-t-[1.3rem] h flex justify-between items-center px-[0.8rem] text-[1rem] ">
 
                     <div className="profile flex items-center gap-2">
 
@@ -184,7 +184,7 @@ const Chat = () => {
                                     }
                                     return(
                                         <div key={index} className = {`messageContainer flex justify-${position}`}>
-                                            <div className={`glass ${color} max-w-[75%] hyphens px-[0.9rem] py-[0.6rem] flex flex-col justify-center items-start gap-[0.3rem] rounded-[1.2rem] shadow-md`}>
+                                            <div className={`glass backdrop-blur-[12px] ${color} max-w-[75%] hyphens px-[0.9rem] py-[0.6rem] flex flex-col justify-center items-start gap-[0.3rem] rounded-[1.2rem] shadow-md`}>
                                                 <div className="text hyphens leading-tight">
                                                     {//@ts-ignore
                                                     ele.text
@@ -208,7 +208,7 @@ const Chat = () => {
                                         key={index}
                                         className="announcement flex justify-center text-white  w-full"
                                         >
-                                        <div className="bg-[rgb(23,81,74)] text-center glass glass-join rounded-[5rem] text-[0.8rem] px-2 py-[0.2rem]">
+                                        <div className="bg-[rgb(23,81,74)] text-center glass backdrop-blur-[12px] glass-join rounded-[5rem] text-[0.8rem] px-2 py-[0.2rem]">
                                             {//@ts-ignore
                                             ele.text
                                             }
@@ -222,7 +222,7 @@ const Chat = () => {
                                         key={index}
                                         className="announcement flex justify-center text-black  w-full"
                                         >
-                                        <div className="bg-[rgb(209,233,251)] text-center glass glass-left rounded-[5rem] text-[0.8rem] px-2 py-[0.2rem]">
+                                        <div className="bg-[rgb(209,233,251)] text-center glass backdrop-blur-[12px] glass-left rounded-[5rem] text-[0.8rem] px-2 py-[0.2rem]">
                                             {//@ts-ignore
                                             ele.text
                                             }
@@ -236,7 +236,7 @@ const Chat = () => {
                 </div>
 
                 <div
-                    className="typing refined glass w-full h-[9%] sm:rounded-b-[1.4rem] flex justify-between items-center p-4 gap-[0.6rem] text-[1rem]">
+                    className="typing refined glass backdrop-blur-[12px] w-full h-[9%] sm:rounded-b-[1.4rem] flex justify-between items-center p-4 gap-[0.6rem] text-[1rem]">
 
                     <input onInput={typing} onKeyDown={(e)=>{if(e.key=="Enter") onSend()}} onChange={(e)=>setText(e.target.value)} value={text} id="inputText" className="glass-other rounded-[5rem] border border-zinc-200 p-4 w-[88%] h-10"
                         type="text" placeholder="Type a message..."/>

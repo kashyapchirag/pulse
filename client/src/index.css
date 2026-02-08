@@ -28,7 +28,7 @@
 /* glassmorphism */
 .glass {
     background-color: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(12px);
+    /* backdrop-filter: blur(12px); */
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -36,7 +36,7 @@
 
 .glass-strong {
     background-color: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }

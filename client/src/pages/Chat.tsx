@@ -138,12 +138,12 @@ const Chat = () => {
         typingText=`${typingNames.length} people are typing`
     }
     return (
-        <div className="Container w-dvw h-dvh bg-zinc-200 flex flex-col justify-center items-center">
+        <div className="Container w-dvw h-dvh bg-transparent flex flex-col justify-center items-center">
 
-            <div id="chatCont" className="cont bg w-full h-full sm:w-[60%] md:w-1/2 shadow-md sm:rounded-[1.3rem] bg-zinc-100">
+            <div id="chatCont" className="cont bg w-full h-full sm:w-[60%] md:w-1/2 shadow-md sm:rounded-[1.3rem]">
 
                 <div id="header"
-                    className="header refined glass w-full h-[9%] sm:rounded-t-[1.3rem] bg-white h flex justify-between items-center px-[0.8rem] text-[1rem] ">
+                    className="header refined glass w-full h-[9%] sm:rounded-t-[1.3rem] h flex justify-between items-center px-[0.8rem] text-[1rem] ">
 
                     <div className="profile flex items-center gap-2">
 
@@ -236,7 +236,7 @@ const Chat = () => {
                 </div>
 
                 <div
-                    className="typing refined glass w-full h-[9%] bg-white sm:rounded-b-[1.4rem] flex justify-between items-center p-4 gap-[0.6rem] text-[1rem]">
+                    className="typing refined glass w-full h-[9%] sm:rounded-b-[1.4rem] flex justify-between items-center p-4 gap-[0.6rem] text-[1rem]">
 
                     <input onInput={typing} onKeyDown={(e)=>{if(e.key=="Enter") onSend()}} onChange={(e)=>setText(e.target.value)} value={text} id="inputText" className="glass-other rounded-[5rem] border border-zinc-200 p-4 w-[88%] h-10"
                         type="text" placeholder="Type a message..."/>

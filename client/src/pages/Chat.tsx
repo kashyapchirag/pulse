@@ -140,7 +140,7 @@ const Chat = () => {
     return (
         <div className="Container w-dvw h-dvh bg-transparent flex flex-col justify-center items-center">
 
-            <div id="chatCont" className="cont bg w-full h-full sm:w-[60%] md:w-1/2 shadow-md sm:rounded-[1.3rem]">
+            <div id="chatCont" className="cont bg w-full h-full md:border border-zinc-900 sm:w-[60%] md:w-1/2 shadow-md sm:rounded-[1.3rem]">
 
                 <div id="header"
                     className="header refined glass w-full h-[9%] sm:rounded-t-[1.3rem] h flex justify-between items-center px-[0.8rem] text-[1rem] ">

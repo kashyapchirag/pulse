@@ -49,7 +49,7 @@ const Rooms = () => {
     return (
         <div className='bigCont w-screen h-screen bg-transparent flex justify-center'>
 
-            <div className="roomsCont bg md:border border-zinc-900 x md:rounded-2xl md:w-3/4 lg:w-1/2 h-full w-full flex flex-col  items-center">
+            <div className="roomsCont bg md:border border-zinc-900  md:rounded-2xl md:w-3/4 lg:w-1/2 h-full w-full flex flex-col  items-center">
             
                 <div className="public h-1/2  w-full  rounded-md p-[1.3rem] bg-transparent">
                     <div className="top flex justify-between items-start">

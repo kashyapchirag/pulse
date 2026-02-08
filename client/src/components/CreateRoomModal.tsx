@@ -39,6 +39,11 @@ const CreateRoomModal = ({setIsModalOpen,setRooms,rooms}) => {
 
                     <input
                         value={room}
+                        onKeyDown={(e)=>{
+                            if(e.key==="Enter"){
+                                addRooms()
+                            }
+                        }}
                         onChange={(e)=>setRoom(e.target.value)}
                         placeholder="Room name"
                         className="w-full border border-zinc-400 rounded-md px-3 py-2 mb-4"

@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
-import dbConnection from './congig/db.js'
+import dbConnection from './config/db.js'
 import roomRoute from './routes/roomRoute.js'
 
 const app = express()

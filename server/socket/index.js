@@ -6,7 +6,6 @@ const initSocket = (httpServer)=>{
             origin:'http://localhost:5173'
         }
     })
-
     io.on('connection',(socket)=>{
         console.log('User connected');
         socket.on("joined-room",({room,username})=>{
@@ -20,7 +19,6 @@ const initSocket = (httpServer)=>{
                 text:`${socket.data.username} has joined ${room}`,
                 type:"join",             
             })
-
         })
         socket.on("leave-room",()=>{
             const {room,username} = socket.data
@@ -30,6 +28,22 @@ const initSocket = (httpServer)=>{
                 room,
                 text:`${username} has left ${room}`,
                 type:"left",   
+            })
+        })
+
+        socket.on("typing-start",()=>{
+            const {room,username} = socket.data
+            socket.to(room).emit("typing-user",{
+                socketId:socket.id,
+                username
+            })
+        })
+
+        socket.on("typing-stop",()=>{
+            const {room,username} = socket.data
+            socket.to(room).emit("typing-stop-user",{
+                socketId:socket.id,
+                username
             })
         })
 

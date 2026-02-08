@@ -15,7 +15,7 @@ const Join = () => {
     return (
     <div className="bigCont w-screen h-screen bg-transparent flex justify-center">
         <div className="loginCont bg md:border border-zinc-900 w-full md:rounded-2xl md:w-3/4 lg:w-1/2 h-full flex justify-center items-center">
-            <form className="border border-zinc-800 rounded-2xl w-[85%] glass-strong p-3">
+            <form className="border border-zinc-800 rounded-2xl w-[85%] glass p-3">
                 <h1 className="text-[1.4rem] font-bold">Enter your name</h1>
                 <h3 className="text-zinc-500 font-medium">
                     Enter a nickname to introduce yourself

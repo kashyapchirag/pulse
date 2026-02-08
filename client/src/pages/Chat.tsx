@@ -138,9 +138,9 @@ const Chat = () => {
         typingText=`${typingNames.length} people are typing`
     }
     return (
-        <div className="Container w-dvw h-dvh bg-transparent flex flex-col justify-center items-center">
+        <div className="Container w-dvw h-dvh bg-zinc-200 flex flex-col justify-center items-center">
 
-            <div id="chatCont" className="cont bg w-full h-full md:border border-zinc-900 sm:w-[60%] md:w-1/2 shadow-md sm:rounded-[1.3rem]">
+            <div id="chatCont" className="cont bg w-full h-full md:border border-zinc-900 md:rounded-2xl md:w-3/4 lg:w-1/2 h-full w-full shadow:md">
 
                 <div id="header"
                     className="header refined glass backdrop-blur-[12px] w-full h-[9%] sm:rounded-t-[1.3rem] h flex justify-between items-center px-[0.8rem] text-[1rem] ">

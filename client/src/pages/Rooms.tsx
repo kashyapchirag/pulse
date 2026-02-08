@@ -47,7 +47,7 @@ const Rooms = () => {
     },[])
 
     return (
-        <div className='bigCont w-screen h-screen bg-transparent flex justify-center'>
+        <div className='bigCont w-screen h-screen bg-zinc-200 flex justify-center'>
 
             <div className="roomsCont bg md:border border-zinc-900  md:rounded-2xl md:w-3/4 lg:w-1/2 h-full w-full flex flex-col  items-center">
             
